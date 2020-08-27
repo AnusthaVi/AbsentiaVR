@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Absentia	VR</title>
+	<link rel="stylesheet" href="home.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<script src="home.js"></script>
+	<script>
+		var expanded = false;
+		function showCheckboxes() {
+			var checkboxes = document.getElementById("checkboxes");
+			if(!expanded) {
+				checkboxes.style.display = "block";
+				expanded = true;
+			}
+			else {
+				checkboxes.style.display = "none";
+				expanded = false;
+			}
+		}
+	</script>
+
+</head>
+
+<body>
+	<div class="container-fluid nopadding">
+		<nav class="navbar fixed-top navbar-dark bg-dark">
+		  <a class="navbar-brand" href="#">Absentia VR</a>
+		</nav>
+		<div class="container-fluid pt-70 pb-10">
+			<div class="container-fluid nopadding">
+			 	<div class="row">
+			    	<div class="col col-lg-4 pt-85">
+			    		<div id="fixContainer">
+				    		<div class="container">
+				    			<div class="container-fluid">
+					    			<div class="row">
+								    	<div class="col text-center">
+								    		<button type="button" class="btn btn-danger">SampleData1</button>
+								    	</div>
+								    	<div class="col text-center">
+								    		<button type="button" class="btn btn-danger">SampleData2</button>
+								    	</div>
+								    	<div class="col text-center">
+								    		<button type="button" class="btn btn-danger">SampleData3</button>
+								    	</div>
+									</div>
+									<div class="row pt-10 text-center">
+								    	<div class="col text-center ">			        
+						        	  		<button type="button" class="btn btn-danger btn-block">
+						              			Get Default Conversion
+						              		</button>
+						          		</div>					          	
+							    	</div>
+						    	</div>
+							</div>    
+
+			            
+			            	<br><br><br><br>
+
+			            	<div class="container">
+				            	<div class="row">
+				            		<div class="col text-center">
+						            	<div class="container-fluid">
+							            	<div class="custom-file" >
+										   		<input type="file" class="custom-file-input" id="customFile">
+										  		<label class="custom-file-label" for="customFile">Upload file</label>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<br>
+
+							<div class="container-fluid">								
+								<div class="container">
+			            			<div class="row">
+			            				<div class="col">
+											<form>
+												<div class="multiselect ">
+													<div class="selectBox" onclick="showCheckboxes()">
+														<select>
+															<option>Select Conversions</option>
+														</select>
+														<div class="overSelect">										
+														</div>
+													</div>
+													<div id="checkboxes">
+														<label for="three"><input type="checkbox" id="three" checked/> Mobile </label>
+														<label for="one"><input type="checkbox" id="one" checked/> Medium Rectangle </label>
+														<label for="two"><input type="checkbox" id="two"/> Large Rectangle </label>
+														<label for="four"><input type="checkbox" id="four"/> Half Page </label>
+														<label for="five"><input type="checkbox" id="five" checked/> Square </label>
+														<label for="six"><input type="checkbox" id="six" checked/> Small Square </label>
+														<label for="seven"><input type="checkbox" id="seven"/> SkyScraper </label>
+														<label for="eight"><input type="checkbox" id="eight"/> Half Banner </label>
+													</div>
+												</div>
+
+												<div class="row pt-10 text-center">
+											    	<div class="col text-center">			        
+									        	  		<button type="button" class="btn btn-danger btn-block">
+									              			Preview Selected Conversions
+									              		</button>
+									          		</div>					          	
+										    	</div>
+											</form>
+
+										</div>
+									</div>
+								</div>
+
+								<div class="container">
+									<div class="row pt-20 text-center">
+								    	<div class="col text-center ">			        
+						        	  		<button type="button" class="btn btn-danger btn-block">
+						              			Export/Save
+						              		</button>
+						          		</div>					          	
+							    	</div>
+						    	</div>
+							</div>	
+						</div>				
+			    	</div>
+
+				    <div class="col">
+				    	<div class="container-fluid nopadding">
+				    		
+
+				    		<div class="row">
+				    			<div class="col">
+						    		<div class="container">
+						    			<h3 class="text-center">Original Upload</h3>
+						    			<div class="text-center">
+						    				<img src="originalUpload.jpg"/>
+						    				<div class="pt-10">
+							    				<button type="button" class="btn btn-sm btn-danger">Add Text</button>
+							    				<button type="button" class="btn btn-sm btn-danger">Add Image</button>
+							    			</div>
+						    			</div>
+						    		</div>
+						    	</div>
+					    	</div>
+
+
+					    	<div class="row">
+				    			<div class="col">
+						    		<div class="container pt-20">
+						    			<h3 class="text-center">Mobile</h3>
+						    			<div class="text-center">
+						    				<img src="mobile.jpg"/>
+						    				<div class="pt-10">
+							    				<button type="button" class="btn btn-sm btn-danger">Add Text</button>
+							    				<button type="button" class="btn btn-sm btn-danger">Add Image</button>
+							    			</div>
+						    			</div>
+						    		</div>
+						    	</div>
+						    </div>
+
+						    <div class="row">
+				    			<div class="col">
+						    		<div class="container pt-20">
+						    			<h3 class="text-center">Medium Rectangle</h3>
+						    			<div class="text-center">
+						    				<img src="mediumRectangle.jpg"/>
+						    				<div class="pt-10">
+							    				<button type="button" class="btn btn-sm btn-danger">Add Text</button>
+							    				<button type="button" class="btn btn-sm btn-danger">Add Image</button>
+							    			</div>
+						    			</div>
+						    		</div>
+						    	</div>
+						    </div>
+
+						    <div class="row">
+				    			<div class="col">
+						    		<div class="container pt-20">
+						    			<h3 class="text-center">Square</h3>
+						    			<div class="text-center">
+						    				<img src="square.jpg"/>
+						    				<div class="pt-10">
+							    				<button type="button" class="btn btn-sm btn-danger">Add Text</button>
+							    				<button type="button" class="btn btn-sm btn-danger">Add Image</button>
+							    			</div>
+						    			</div>
+						    		</div>
+						    	</div>
+						    </div>
+
+						    <div class="row">
+				    			<div class="col">
+						    		<div class="container pt-20">
+						    			<h3 class="text-center">Small Square</h3>
+						    			<div class="text-center">
+						    				<img src="smallSquare.jpg"/>
+						    				<div class="pt-10">
+							    				<button type="button" class="btn btn-sm btn-danger">Add Text</button>
+							    				<button type="button" class="btn btn-sm btn-danger">Add Image</button>
+							    			</div>
+						    			</div>
+						    		</div>
+						    	</div>
+						    </div>
+				     	</div>
+				    </div>
+				
+				</div>	
+			</div>
+		</div>
+	</div>
+
+</body>
+
+</html>
